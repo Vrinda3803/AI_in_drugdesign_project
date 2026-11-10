@@ -1,0 +1,11 @@
+{
+  "method": "Pareto tiering of paired same-paper observed activity and human-RBC hemolysis evidence",
+  "activity_objective": "lower worst MIC across five named NM isolates is better; \u00b5M only",
+  "safety_objective": "higher reported human-RBC 50% hemolysis concentration is better; \u00b5M only",
+  "censoring_rule": "For right-censored H50 (e.g. >200 \u00b5M), use the reported bound as a conservative value and preserve the censoring label; do not treat it as the exact H50.",
+  "dominance_rule": "A measured candidate is no worse on both objectives and strictly better on at least one.",
+  "unscored_rule": "Generated hypotheses without paired experimental measurements remain unscored; no model or docking value is imputed.",
+  "measured_paired_candidates": 4,
+  "generated_hypotheses_unscored": 5,
+  "output": "results\\candidate_prioritization\\multiobjective_candidate_priority.csv"
+}

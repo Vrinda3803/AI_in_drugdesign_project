@@ -1,0 +1,183 @@
+{
+  "endpoint": "log2 concentration reported for exact 50% human erythrocyte hemolysis",
+  "scope_limit": "This is an exploratory assay-specific hemolysis endpoint, not general toxicity or a safe/unsafe classification.",
+  "selection": "Human erythrocytes; exact 50% Hemolysis endpoint; exact numeric concentration; standard amino acids; units separate.",
+  "censoring": "Ranges, censored values, and uncertainty notation are excluded from this baseline and retained in the source cohort.",
+  "sequence_scope": "One-letter sequence descriptors; terminal and other chemical modifications are not represented in model features.",
+  "publication_grouping": "Candidate PubMed IDs are mapped through the source's article-index field and have not been comprehensively paper-verified.",
+  "evaluation": {
+    "split": "GroupShuffleSplit",
+    "test_size": 0.2,
+    "repeats": 5,
+    "seed": 42,
+    "groups": "connected 80% global edit-identity components joined across shared candidate PubMed IDs"
+  },
+  "python_version": "3.11.9",
+  "scikit_learn_version": "1.9.1",
+  "units": {
+    "micromolar": {
+      "n_candidate_sequences_before_feature_join": 61,
+      "n_candidate_observations_before_feature_join": 63,
+      "n_sequences_excluded_for_missing_exact_feature_match": 7,
+      "n_unique_sequences": 54,
+      "n_source_observations": 55,
+      "n_group_components": 22,
+      "models": {
+        "median_dummy": {
+          "MAE_log2_H50": {
+            "mean": 2.0323835109549626,
+            "sd": 0.4870647460918598
+          },
+          "RMSE_log2_H50": {
+            "mean": 2.3833364033799738,
+            "sd": 0.46959018917822465
+          },
+          "R2_log2_H50": {
+            "mean": -0.2728663291755425,
+            "sd": 0.20626896351218174
+          },
+          "MAE_fold_change": {
+            "mean": 4.325468708802734,
+            "sd": 1.4197690047601492
+          }
+        },
+        "ridge": {
+          "MAE_log2_H50": {
+            "mean": 2.174473700315988,
+            "sd": 0.40270558504754356
+          },
+          "RMSE_log2_H50": {
+            "mean": 2.7894750116558695,
+            "sd": 0.43542890702964543
+          },
+          "R2_log2_H50": {
+            "mean": -1.1239689557472037,
+            "sd": 1.408816914241001
+          },
+          "MAE_fold_change": {
+            "mean": 4.701344235544226,
+            "sd": 1.4042627386303703
+          }
+        },
+        "svr_rbf": {
+          "MAE_log2_H50": {
+            "mean": 2.128639423828589,
+            "sd": 0.3527281542589242
+          },
+          "RMSE_log2_H50": {
+            "mean": 2.4695507470035345,
+            "sd": 0.31680433356800536
+          },
+          "R2_log2_H50": {
+            "mean": -0.46619386990260236,
+            "sd": 0.5234570587477377
+          },
+          "MAE_fold_change": {
+            "mean": 4.497821823420743,
+            "sd": 1.0082122926445232
+          }
+        },
+        "random_forest": {
+          "MAE_log2_H50": {
+            "mean": 2.0446983563004433,
+            "sd": 0.41882775097964753
+          },
+          "RMSE_log2_H50": {
+            "mean": 2.3998440117921556,
+            "sd": 0.4353623436089347
+          },
+          "R2_log2_H50": {
+            "mean": -0.30926625450855205,
+            "sd": 0.2926634916437079
+          },
+          "MAE_fold_change": {
+            "mean": 4.287953770849043,
+            "sd": 1.0915905581608683
+          }
+        }
+      }
+    },
+    "ug_per_ml": {
+      "n_candidate_sequences_before_feature_join": 31,
+      "n_candidate_observations_before_feature_join": 31,
+      "n_sequences_excluded_for_missing_exact_feature_match": 15,
+      "n_unique_sequences": 16,
+      "n_source_observations": 16,
+      "n_group_components": 12,
+      "models": {
+        "median_dummy": {
+          "MAE_log2_H50": {
+            "mean": 2.2009908449271527,
+            "sd": 0.74663420610797
+          },
+          "RMSE_log2_H50": {
+            "mean": 2.4768053412004414,
+            "sd": 0.7649900708894319
+          },
+          "R2_log2_H50": {
+            "mean": -1.321020774685024,
+            "sd": 0.7546655735791803
+          },
+          "MAE_fold_change": {
+            "mean": 5.173103528214012,
+            "sd": 2.2028612606212215
+          }
+        },
+        "ridge": {
+          "MAE_log2_H50": {
+            "mean": 3.538922112251572,
+            "sd": 1.16741642825764
+          },
+          "RMSE_log2_H50": {
+            "mean": 3.90522734757524,
+            "sd": 1.1076506911014572
+          },
+          "R2_log2_H50": {
+            "mean": -5.076195066773807,
+            "sd": 2.277377097951095
+          },
+          "MAE_fold_change": {
+            "mean": 15.638177579261628,
+            "sd": 10.891060475908546
+          }
+        },
+        "svr_rbf": {
+          "MAE_log2_H50": {
+            "mean": 2.278456929592932,
+            "sd": 0.891705393233139
+          },
+          "RMSE_log2_H50": {
+            "mean": 2.5862495844480056,
+            "sd": 0.9055220112236552
+          },
+          "R2_log2_H50": {
+            "mean": -1.3646017544543132,
+            "sd": 0.13639264653008285
+          },
+          "MAE_fold_change": {
+            "mean": 5.752723504643481,
+            "sd": 2.9473211232835816
+          }
+        },
+        "random_forest": {
+          "MAE_log2_H50": {
+            "mean": 2.2686451196506194,
+            "sd": 0.7770239395033793
+          },
+          "RMSE_log2_H50": {
+            "mean": 2.5801760731480465,
+            "sd": 0.8104469772315589
+          },
+          "R2_log2_H50": {
+            "mean": -1.5402041262495412,
+            "sd": 0.9079297700747828
+          },
+          "MAE_fold_change": {
+            "mean": 5.505160341130592,
+            "sd": 2.580462953773728
+          }
+        }
+      }
+    }
+  }
+}

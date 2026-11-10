@@ -1,0 +1,213 @@
+{
+  "generated_utc": "2026-11-09T17:31:16.135321+00:00",
+  "planned_run_count": 60,
+  "complete_run_count": 0,
+  "partial_run_count": 0,
+  "not_run_count": 60,
+  "score_interpretation": "No numeric affinity or docking score is calculated here. Pose model indices are ranks; cluster-density artifacts are retained by path and checksum for review.",
+  "completion_evidence": "CABS.log contains 'Simulation completed successfully', at least one output_pdbs/model_N.pdb exists, and output_data/cluster_names.txt is nonempty.",
+  "official_output_reference": "https://cabsflex.lcbio.pl/peptide-protein-docking.html",
+  "run_inventory_csv": "results\\docking\\cabsdock\\observed_runs.csv",
+  "candidate_receptor_summary": [
+    {
+      "candidate_id": "B2RP_parent",
+      "sequence": "GIWDTIKSMGKVFAGKILQNL",
+      "receptor_file": "22HQ_chainA_GDPbound.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "B2RP_parent",
+      "sequence": "GIWDTIKSMGKVFAGKILQNL",
+      "receptor_file": "22HR_chainA_apo.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "B2RP_top_published_lead_control",
+      "sequence": "GIWKTIKSMGKVFAGAIKQNL",
+      "receptor_file": "22HQ_chainA_GDPbound.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "B2RP_top_published_lead_control",
+      "sequence": "GIWKTIKSMGKVFAGAIKQNL",
+      "receptor_file": "22HR_chainA_apo.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4K",
+      "sequence": "GIWKTIKSMGKVFAGKILQNL",
+      "receptor_file": "22HQ_chainA_GDPbound.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4K",
+      "sequence": "GIWKTIKSMGKVFAGKILQNL",
+      "receptor_file": "22HR_chainA_apo.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4K_L18K",
+      "sequence": "GIWKTIKSMGKVFAGKIKQNL",
+      "receptor_file": "22HQ_chainA_GDPbound.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4K_L18K",
+      "sequence": "GIWKTIKSMGKVFAGKIKQNL",
+      "receptor_file": "22HR_chainA_apo.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4K_L18R_hypothesis",
+      "sequence": "GIWKTIKSMGKVFAGKIRQNL",
+      "receptor_file": "22HQ_chainA_GDPbound.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4K_L18R_hypothesis",
+      "sequence": "GIWKTIKSMGKVFAGKIRQNL",
+      "receptor_file": "22HR_chainA_apo.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4R_L18K_hypothesis",
+      "sequence": "GIWRTIKSMGKVFAGKIKQNL",
+      "receptor_file": "22HQ_chainA_GDPbound.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4R_L18K_hypothesis",
+      "sequence": "GIWRTIKSMGKVFAGKIKQNL",
+      "receptor_file": "22HR_chainA_apo.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4R_L18R_hypothesis",
+      "sequence": "GIWRTIKSMGKVFAGKIRQNL",
+      "receptor_file": "22HQ_chainA_GDPbound.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4R_L18R_hypothesis",
+      "sequence": "GIWRTIKSMGKVFAGKIRQNL",
+      "receptor_file": "22HR_chainA_apo.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4R_hypothesis",
+      "sequence": "GIWRTIKSMGKVFAGKILQNL",
+      "receptor_file": "22HQ_chainA_GDPbound.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "D4R_hypothesis",
+      "sequence": "GIWRTIKSMGKVFAGKILQNL",
+      "receptor_file": "22HR_chainA_apo.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "L18K",
+      "sequence": "GIWDTIKSMGKVFAGKIKQNL",
+      "receptor_file": "22HQ_chainA_GDPbound.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "L18K",
+      "sequence": "GIWDTIKSMGKVFAGKIKQNL",
+      "receptor_file": "22HR_chainA_apo.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "L18R_hypothesis",
+      "sequence": "GIWDTIKSMGKVFAGKIRQNL",
+      "receptor_file": "22HQ_chainA_GDPbound.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    },
+    {
+      "candidate_id": "L18R_hypothesis",
+      "sequence": "GIWDTIKSMGKVFAGKIRQNL",
+      "receptor_file": "22HR_chainA_apo.pdb",
+      "planned_seed_count": 3,
+      "complete_run_count": 0,
+      "partial_run_count": 0,
+      "not_run_count": 3,
+      "total_ranked_pose_models": 0
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "22HQ": {
+    "title": "Crystal structure of GDP-bound FtsZ from Acinetobacter baumannii",
+    "release_date": "2026-05-20T00:00:00.000+00:00",
+    "experimental_method": "X-ray",
+    "resolution_angstrom": 2.3,
+    "r_work": 0.2184,
+    "r_free": 0.2633,
+    "data_completeness_percent": 93.66,
+    "sequence_length": 306,
+    "sequence": "ARFTVFGVGGGGGNAVQHMVQSDIQGVKFVCANTDKQALDCMNAPFKIQLGEQSTRGLGAGANPEVGQVAAEESREIIRQHLEGTDMVFVTAGMGGGTGTGAAPVVAEVAKEMGILTVGVVTTPFNFEGRRRQKSAERGIEALEAHVDSLIIIPNQRLLSVYGDISMKDAYKKADDVLLNAVRSIFDLVVNRGHINLDFADLKTAMSTRGYAMMGAGLGRGEDRARQAAEQAIRSPLLDNVNIINAKGVLINITGGDDITLRETEIITDVVNQIVDLDEGEIFYGTVFDPDARDELRVTVIATGLT",
+    "chain_ids": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "entity_description": "Cell division protein FtsZ",
+    "uniprot_ids": [
+      "V5V8B6"
+    ],
+    "source_organism": "Acinetobacter baumannii",
+    "mutation_count": 0,
+    "modeled_residue_count_all_chains": 1191,
+    "unmodeled_residue_count_all_chains": 33,
+    "chain_entity_instance_count": 4,
+    "assembly_1_details": {
+      "details": "author_defined_assembly",
+      "id": "1",
+      "oligomeric_count": 1,
+      "oligomeric_details": "monomeric",
+      "rcsb_candidate_assembly": "Y",
+      "rcsb_details": "author_defined_assembly"
+    },
+    "nonpolymer_entity_count": 1,
+    "validation": {
+      "clashscore": 5.91,
+      "ramachandran_outliers_percent": 0.0,
+      "rotamer_outliers_percent": 16.03,
+      "bond_rmsz": 0.88,
+      "angle_rmsz": 1.3,
+      "data_anisotropy": 0.281,
+      "real_space_rsrz_outliers_percent": 2.85
+    },
+    "coordinate_file": "22HQ.cif",
+    "rcsb_url": "https://www.rcsb.org/structure/22HQ"
+  },
+  "22HR": {
+    "title": "Crystal structure of Apo FtsZ from Acinetobacter baumannii",
+    "release_date": "2026-05-20T00:00:00.000+00:00",
+    "experimental_method": "X-ray",
+    "resolution_angstrom": 3.0,
+    "r_work": 0.247,
+    "r_free": 0.2847,
+    "data_completeness_percent": 92.67,
+    "sequence_length": 307,
+    "sequence": "ARFTVFGVGGGGGNAVQHMVQSDIQGVKFVCANTDKQALDCMNAPFKIQLGEQSTRGLGAGANPEVGQVAAEESREIIRQHLEGTDMVFVTAGMGGGTGTGAAPVVAEVAKEMGILTVGVVTTPFNFEGRRRQKSAERGIEALEAHVDSLIIIPNQRLLSVYGDISMKDAYKKADDVLLNAVRSIFDLVVNRGHINLDFADLKTAMSTRGYAMMGAGLGRGEDRARQAAEQAIRSPLLDNVNIINAKGVLINITGGDDITLRETEIITDVVNQIVDLDEGEIFYGTVFDPDARDELRVTVIATGLTL",
+    "chain_ids": [
+      "A",
+      "B"
+    ],
+    "entity_description": "Cell division protein FtsZ",
+    "uniprot_ids": [
+      "V5V8B6"
+    ],
+    "source_organism": "Acinetobacter baumannii",
+    "mutation_count": 0,
+    "modeled_residue_count_all_chains": 599,
+    "unmodeled_residue_count_all_chains": 15,
+    "chain_entity_instance_count": 2,
+    "assembly_1_details": {
+      "details": "author_defined_assembly",
+      "id": "1",
+      "oligomeric_count": 1,
+      "oligomeric_details": "monomeric",
+      "rcsb_candidate_assembly": "Y",
+      "rcsb_details": "author_defined_assembly"
+    },
+    "nonpolymer_entity_count": 0,
+    "validation": {
+      "clashscore": 10.2,
+      "ramachandran_outliers_percent": 0.51,
+      "rotamer_outliers_percent": 18.42,
+      "bond_rmsz": 0.49,
+      "angle_rmsz": 0.96,
+      "data_anisotropy": 0.407,
+      "real_space_rsrz_outliers_percent": 0.67
+    },
+    "coordinate_file": "22HR.cif",
+    "rcsb_url": "https://www.rcsb.org/structure/22HR"
+  }
+}

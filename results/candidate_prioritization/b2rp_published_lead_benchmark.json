@@ -1,0 +1,10 @@
+{
+  "source_pmid": "19793185",
+  "paper_title": "Antimicrobial properties of brevinin-2-related peptide and its analogs: Efficacy against multidrug-resistant Acinetobacter baumannii",
+  "variants_with_named_isolate_mic_and_human_rbc_h50": 4,
+  "outputs": [
+    "results\\candidate_prioritization\\b2rp_published_lead_benchmark.csv",
+    "results\\candidate_prioritization\\b2rp_published_lead_benchmark.json"
+  ],
+  "lead_interpretation": "This is a published benchmark/control panel, not novel peptide discovery. The ratio is a rough same-study concentration comparison; it is not a validated safety index."
+}

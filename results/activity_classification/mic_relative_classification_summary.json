@@ -1,0 +1,242 @@
+{
+  "endpoint": "relative potency class from exact species-level MIC point measurements",
+  "label_definition": "lower_mic_than_unit_cohort_median vs at_or_above_unit_cohort_median, per unit",
+  "not_an_activity_call": "No validated inactive labels are present; these labels do not mean active/inactive.",
+  "evaluation": {
+    "split": "GroupShuffleSplit",
+    "test_size": 0.2,
+    "repeats": 5,
+    "seed": 42,
+    "groups": "connected 80% global edit-identity components joined across shared candidate PubMed IDs"
+  },
+  "python_version": "3.11.9",
+  "scikit_learn_version": "1.9.1",
+  "units": {
+    "micromolar": {
+      "n_sequences": 255,
+      "n_positive_lower_mic": 122,
+      "n_at_or_above_median": 133,
+      "median_cutoff_mic_source_unit": 4.0,
+      "n_group_components": 70,
+      "metrics_mean_sd": {
+        "majority_dummy": {
+          "accuracy": {
+            "mean": 0.4715797608376747,
+            "sd": 0.08976983531654538
+          },
+          "precision": {
+            "mean": 0.4077499736036322,
+            "sd": 0.20931995724010583
+          },
+          "recall": {
+            "mean": 0.8,
+            "sd": 0.4
+          },
+          "f1": {
+            "mean": 0.5388802290278542,
+            "sd": 0.27258894386919663
+          },
+          "roc_auc": {
+            "mean": 0.5,
+            "sd": 0.0
+          },
+          "pr_auc": {
+            "mean": 0.5439201863695897,
+            "sd": 0.08329075912767253
+          }
+        },
+        "logistic_regression": {
+          "accuracy": {
+            "mean": 0.5692365721115072,
+            "sd": 0.04358779998890029
+          },
+          "precision": {
+            "mean": 0.5900958290901365,
+            "sd": 0.091085535665919
+          },
+          "recall": {
+            "mean": 0.6319095904095905,
+            "sd": 0.08188074420765684
+          },
+          "f1": {
+            "mean": 0.6083125430953424,
+            "sd": 0.0799842622874171
+          },
+          "roc_auc": {
+            "mean": 0.5590782861874967,
+            "sd": 0.07867068447380181
+          },
+          "pr_auc": {
+            "mean": 0.61460088380199,
+            "sd": 0.16276619855429725
+          }
+        },
+        "svm_rbf": {
+          "accuracy": {
+            "mean": 0.617929109465176,
+            "sd": 0.08940860969347043
+          },
+          "precision": {
+            "mean": 0.6174106877842023,
+            "sd": 0.13049014998809624
+          },
+          "recall": {
+            "mean": 0.7082542457542458,
+            "sd": 0.16258803139906577
+          },
+          "f1": {
+            "mean": 0.6537723528229857,
+            "sd": 0.1340840951946612
+          },
+          "roc_auc": {
+            "mean": 0.6445456429535377,
+            "sd": 0.09285981789394367
+          },
+          "pr_auc": {
+            "mean": 0.6683378820080947,
+            "sd": 0.12465518699599157
+          }
+        },
+        "random_forest": {
+          "accuracy": {
+            "mean": 0.5559394298833842,
+            "sd": 0.12733643563209818
+          },
+          "precision": {
+            "mean": 0.5656406473850693,
+            "sd": 0.17783158151810483
+          },
+          "recall": {
+            "mean": 0.6369930069930071,
+            "sd": 0.17736951330922865
+          },
+          "f1": {
+            "mean": 0.5957159112050942,
+            "sd": 0.17026457507342724
+          },
+          "roc_auc": {
+            "mean": 0.5867469543614281,
+            "sd": 0.12343631310157976
+          },
+          "pr_auc": {
+            "mean": 0.6698695141135478,
+            "sd": 0.14624142399689166
+          }
+        }
+      }
+    },
+    "ug_per_ml": {
+      "n_sequences": 256,
+      "n_positive_lower_mic": 127,
+      "n_at_or_above_median": 129,
+      "median_cutoff_mic_source_unit": 12.500000000000002,
+      "n_group_components": 69,
+      "metrics_mean_sd": {
+        "majority_dummy": {
+          "accuracy": {
+            "mean": 0.4137554259343642,
+            "sd": 0.0846270817122343
+          },
+          "precision": {
+            "mean": 0.2537794643959027,
+            "sd": 0.21579309679953057
+          },
+          "recall": {
+            "mean": 0.6,
+            "sd": 0.48989794855663565
+          },
+          "f1": {
+            "mean": 0.3540777395295468,
+            "sd": 0.29561912251505656
+          },
+          "roc_auc": {
+            "mean": 0.5,
+            "sd": 0.0
+          },
+          "pr_auc": {
+            "mean": 0.4938035028574411,
+            "sd": 0.12067092830526485
+          }
+        },
+        "logistic_regression": {
+          "accuracy": {
+            "mean": 0.5537939859643627,
+            "sd": 0.08089788628535556
+          },
+          "precision": {
+            "mean": 0.5533385133385134,
+            "sd": 0.10549571747882981
+          },
+          "recall": {
+            "mean": 0.5543092656136135,
+            "sd": 0.14316444852154026
+          },
+          "f1": {
+            "mean": 0.5395633756924079,
+            "sd": 0.07404587039749407
+          },
+          "roc_auc": {
+            "mean": 0.5554775486763065,
+            "sd": 0.10991165968302108
+          },
+          "pr_auc": {
+            "mean": 0.5562305136744328,
+            "sd": 0.14612818512945497
+          }
+        },
+        "svm_rbf": {
+          "accuracy": {
+            "mean": 0.5483978618182385,
+            "sd": 0.08181091453560653
+          },
+          "precision": {
+            "mean": 0.5341361726209828,
+            "sd": 0.1196782313967075
+          },
+          "recall": {
+            "mean": 0.5356060364756017,
+            "sd": 0.15344343461327245
+          },
+          "f1": {
+            "mean": 0.5235270364960036,
+            "sd": 0.114881830540919
+          },
+          "roc_auc": {
+            "mean": 0.5550426212848573,
+            "sd": 0.09059955137228293
+          },
+          "pr_auc": {
+            "mean": 0.5753038174027888,
+            "sd": 0.1379094242487546
+          }
+        },
+        "random_forest": {
+          "accuracy": {
+            "mean": 0.579930334189752,
+            "sd": 0.10352451902346765
+          },
+          "precision": {
+            "mean": 0.6049810894991101,
+            "sd": 0.11967702456669885
+          },
+          "recall": {
+            "mean": 0.5657884144840667,
+            "sd": 0.09223423400411325
+          },
+          "f1": {
+            "mean": 0.5686853381302303,
+            "sd": 0.034241645911246
+          },
+          "roc_auc": {
+            "mean": 0.5692818396234546,
+            "sd": 0.07730891993622986
+          },
+          "pr_auc": {
+            "mean": 0.579674557564355,
+            "sd": 0.10935476395948635
+          }
+        }
+      }
+    }
+  }
+}

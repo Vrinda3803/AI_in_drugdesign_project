@@ -1,0 +1,18 @@
+{
+  "selection_rule": "Human erythrocytes; activityMeasureForLysisValue exactly 50% Hemolysis; measurement group contains Hemolysis.",
+  "source_rows_scanned": 1646,
+  "candidate_observation_rows": 218,
+  "unique_nonempty_sequences": 165,
+  "unique_standard_aa_sequences": 143,
+  "concentration_parse_status_counts": {
+    "exact": 118,
+    "reported_uncertainty_not_interpreted": 20,
+    "censored": 80
+  },
+  "unit_raw_counts": {
+    "µM": 136,
+    "µg/ml": 82
+  },
+  "output": "data\\processed\\dbaasp_human_rbc_h50_candidate_records.csv",
+  "interpretation": "A candidate assay-specific H50 cohort for source review. Rows do not define a universal toxicity threshold and are not labeled safe/unsafe."
+}

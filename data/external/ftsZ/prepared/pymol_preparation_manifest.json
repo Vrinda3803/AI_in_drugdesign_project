@@ -1,0 +1,41 @@
+{
+  "software": "PyMOL",
+  "software_version": "3.1.9",
+  "executable": "C:\\Users\\user\\AppData\\Local\\Schrodinger\\PyMOL2\\Scripts\\pymol.exe",
+  "source_structures": {
+    "22HQ.cif": {
+      "sha256": "e409667de09f02e8e2198cd84866ee52bde0f2512472b6e2baaebb7d7713d377",
+      "selection": "chain A protein plus GDP; water/other chains excluded"
+    },
+    "22HR.cif": {
+      "sha256": "ba78d8d8c4d9f09ce909f7b70d5fb022602b9923a7c1c0c96ad3f474d3e36571",
+      "selection": "chain A protein; other chains/heterogens excluded"
+    }
+  },
+  "outputs": {
+    "22HQ_chainA_GDPbound.pdb": {
+      "sha256": "fc25cdaa9083ed55037162f1b60305caacc3494b1701fa901588111b3dc972ae",
+      "atom_records": 2149,
+      "residues": 295,
+      "GDP_residues": 1
+    },
+    "22HR_chainA_apo.pdb": {
+      "sha256": "c816ae42590bc4b93766de740510f36d5bd724b40928e8d1ae1d9496952fcea1",
+      "atom_records": 2236,
+      "residues": 300,
+      "GDP_residues": 0
+    }
+  },
+  "alignment_log_lines": [
+    "ExecutiveAlign: 306 atoms aligned.",
+    "ExecutiveRMS: 15 atoms rejected during cycle 1 (RMSD=1.00).",
+    "ExecutiveRMS: 14 atoms rejected during cycle 2 (RMSD=0.68).",
+    "ExecutiveRMS: 11 atoms rejected during cycle 3 (RMSD=0.60).",
+    "ExecutiveRMS: 10 atoms rejected during cycle 4 (RMSD=0.55).",
+    "ExecutiveRMS: 5 atoms rejected during cycle 5 (RMSD=0.50).",
+    "Executive: RMSD =    0.486 (237 to 237 atoms)"
+  ],
+  "pymol_log": "results\\structure_comparison\\pymol_run.log",
+  "reproducible_script": "scripts\\docking\\ftsZ_prepare_and_align.pml",
+  "interpretation": "Prepared inspection/receptor inputs only. This is not peptide docking, binding evidence, or a validated receptor-preparation protocol."
+}

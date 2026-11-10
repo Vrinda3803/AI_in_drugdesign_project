@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+.presentation-build/
+.build_amp_presentation.mjs
+tmp/

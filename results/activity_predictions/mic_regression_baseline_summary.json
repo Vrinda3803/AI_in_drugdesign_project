@@ -1,0 +1,524 @@
+{
+  "endpoint": "median log2(MIC concentration) per exact peptide sequence, species-level target only",
+  "python_version": "3.11.9",
+  "scikit_learn_version": "1.9.1",
+  "target_species_filter": "Acinetobacter baumannii",
+  "excluded_named_strains": true,
+  "unit_specific_models": true,
+  "censoring_and_ranges": "excluded from this simple point-regression cohort but retained in parsed source table",
+  "sequence_qc": "only sequences containing the 20 standard amino acids",
+  "aggregation": "median over exact parseable MIC observations per exact sequence and unit; source rows/IDs retained in target table",
+  "splits": {
+    "method": "GroupShuffleSplit",
+    "test_size": 0.2,
+    "repeats": 5,
+    "seed": 42,
+    "protocols": {
+      "exact_sequence_group": "groups identical sequence records; one median target per sequence",
+      "global_edit_identity_0.8": "connected components at (max_length-Levenshtein_distance)/max_length >= 0.80; conservative sequence similarity screen, not a substitution-matrix alignment",
+      "identity_0.8_plus_candidate_publication": "combine edit-identity components and sequences sharing candidate PubMed IDs mapped from DBAASP reference indices; candidate reference mapping requires audit"
+    }
+  },
+  "feature_columns": [
+    "length",
+    "molecular_weight_average_unmodified_g_mol",
+    "net_charge_unmodified_pH7",
+    "isoelectric_point_unmodified",
+    "gravy_kyte_doolittle",
+    "hydrophobic_moment_eisenberg_100deg_full_sequence",
+    "hydrophobic_moment_eisenberg_100deg_max_11mer",
+    "AAC_A",
+    "AAC_C",
+    "AAC_D",
+    "AAC_E",
+    "AAC_F",
+    "AAC_G",
+    "AAC_H",
+    "AAC_I",
+    "AAC_K",
+    "AAC_L",
+    "AAC_M",
+    "AAC_N",
+    "AAC_P",
+    "AAC_Q",
+    "AAC_R",
+    "AAC_S",
+    "AAC_T",
+    "AAC_V",
+    "AAC_W",
+    "AAC_Y"
+  ],
+  "unit_results": {
+    "micromolar": {
+      "n_unique_sequences": 255,
+      "n_source_MIC_observations_before_sequence_aggregation": 271,
+      "n_sequences_with_repeated_MIC": 14,
+      "n_sequences_with_candidate_publication_ids": 247,
+      "sequence_cluster_counts": {
+        "exact_sequence_group": 255,
+        "global_edit_identity_0.8": 135,
+        "identity_0.8_plus_candidate_publication": 70
+      },
+      "models_by_split_protocol": {
+        "exact_sequence_group": {
+          "median_dummy": {
+            "MAE_log2_MIC": {
+              "mean": 1.655941419699581,
+              "sd": 0.08650774124477847
+            },
+            "RMSE_log2_MIC": {
+              "mean": 2.051207057045835,
+              "sd": 0.0921963957821588
+            },
+            "R2_log2_MIC": {
+              "mean": -0.03219296331081876,
+              "sd": 0.05466086658174512
+            },
+            "MAE_fold_change": {
+              "mean": 3.156985442270281,
+              "sd": 0.19073983634556899
+            }
+          },
+          "ridge": {
+            "MAE_log2_MIC": {
+              "mean": 1.4238340675807122,
+              "sd": 0.0828198333695429
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.7991908725192491,
+              "sd": 0.08510963921063669
+            },
+            "R2_log2_MIC": {
+              "mean": 0.2054460316987468,
+              "sd": 0.05190690836646259
+            },
+            "MAE_fold_change": {
+              "mean": 2.6874404401435665,
+              "sd": 0.1563493519716237
+            }
+          },
+          "svr_rbf": {
+            "MAE_log2_MIC": {
+              "mean": 1.3511948581238755,
+              "sd": 0.08695156364572887
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.7268021487265592,
+              "sd": 0.12281321679731873
+            },
+            "R2_log2_MIC": {
+              "mean": 0.26756871266818383,
+              "sd": 0.07834409845991136
+            },
+            "MAE_fold_change": {
+              "mean": 2.5558947607264058,
+              "sd": 0.15523168670995172
+            }
+          },
+          "random_forest": {
+            "MAE_log2_MIC": {
+              "mean": 1.242465754753321,
+              "sd": 0.08621173940454718
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.5852136751815027,
+              "sd": 0.0903239122213218
+            },
+            "R2_log2_MIC": {
+              "mean": 0.3828832558221447,
+              "sd": 0.05209574720197688
+            },
+            "MAE_fold_change": {
+              "mean": 2.3702847905157967,
+              "sd": 0.14315597281584008
+            }
+          }
+        },
+        "global_edit_identity_0.8": {
+          "median_dummy": {
+            "MAE_log2_MIC": {
+              "mean": 1.5102971905678155,
+              "sd": 0.16471746826990746
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.8671527012966245,
+              "sd": 0.20228912831676318
+            },
+            "R2_log2_MIC": {
+              "mean": -0.037389284768533496,
+              "sd": 0.02249701345853342
+            },
+            "MAE_fold_change": {
+              "mean": 2.8675051698507796,
+              "sd": 0.3322894355342654
+            }
+          },
+          "ridge": {
+            "MAE_log2_MIC": {
+              "mean": 1.6014981044015737,
+              "sd": 0.11723371293379375
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.9369785488712996,
+              "sd": 0.15469005447796766
+            },
+            "R2_log2_MIC": {
+              "mean": -0.15397876172899333,
+              "sd": 0.2675441902776785
+            },
+            "MAE_fold_change": {
+              "mean": 3.0444887001251413,
+              "sd": 0.2425529068634009
+            }
+          },
+          "svr_rbf": {
+            "MAE_log2_MIC": {
+              "mean": 1.5295392215394363,
+              "sd": 0.1503429699316288
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.8618730352599446,
+              "sd": 0.15220408492859167
+            },
+            "R2_log2_MIC": {
+              "mean": -0.05911288058205779,
+              "sd": 0.23476383284088592
+            },
+            "MAE_fold_change": {
+              "mean": 2.9023835767953887,
+              "sd": 0.29468973942881665
+            }
+          },
+          "random_forest": {
+            "MAE_log2_MIC": {
+              "mean": 1.2590365587392014,
+              "sd": 0.07632103765582886
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.5737150123096086,
+              "sd": 0.11744724701665613
+            },
+            "R2_log2_MIC": {
+              "mean": 0.2459723561219543,
+              "sd": 0.13390834624127917
+            },
+            "MAE_fold_change": {
+              "mean": 2.396753844126632,
+              "sd": 0.1293086750676782
+            }
+          }
+        },
+        "identity_0.8_plus_candidate_publication": {
+          "median_dummy": {
+            "MAE_log2_MIC": {
+              "mean": 1.6048918698739947,
+              "sd": 0.20033944456125635
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.965379313970044,
+              "sd": 0.16264406706088813
+            },
+            "R2_log2_MIC": {
+              "mean": -0.12037554152417917,
+              "sd": 0.1932417115600049
+            },
+            "MAE_fold_change": {
+              "mean": 3.070865609416526,
+              "sd": 0.4190050357762299
+            }
+          },
+          "ridge": {
+            "MAE_log2_MIC": {
+              "mean": 1.6741345965350767,
+              "sd": 0.1910664821470359
+            },
+            "RMSE_log2_MIC": {
+              "mean": 2.041395449666733,
+              "sd": 0.21905298918969987
+            },
+            "R2_log2_MIC": {
+              "mean": -0.2079488000125537,
+              "sd": 0.23200809712017248
+            },
+            "MAE_fold_change": {
+              "mean": 3.2191154713480072,
+              "sd": 0.4199139950895495
+            }
+          },
+          "svr_rbf": {
+            "MAE_log2_MIC": {
+              "mean": 1.4911363394920278,
+              "sd": 0.12031188097661313
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.8236986475878285,
+              "sd": 0.06577824751390597
+            },
+            "R2_log2_MIC": {
+              "mean": 0.03766964951370091,
+              "sd": 0.0918896231488402
+            },
+            "MAE_fold_change": {
+              "mean": 2.82090718573249,
+              "sd": 0.23562685743708744
+            }
+          },
+          "random_forest": {
+            "MAE_log2_MIC": {
+              "mean": 1.4026234211831452,
+              "sd": 0.17691644539271037
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.7073282748126974,
+              "sd": 0.15382287354374594
+            },
+            "R2_log2_MIC": {
+              "mean": 0.15893668017290263,
+              "sd": 0.11425929398407189
+            },
+            "MAE_fold_change": {
+              "mean": 2.663503608886427,
+              "sd": 0.3199888821703076
+            }
+          }
+        }
+      }
+    },
+    "ug_per_ml": {
+      "n_unique_sequences": 256,
+      "n_source_MIC_observations_before_sequence_aggregation": 292,
+      "n_sequences_with_repeated_MIC": 11,
+      "n_sequences_with_candidate_publication_ids": 251,
+      "sequence_cluster_counts": {
+        "exact_sequence_group": 256,
+        "global_edit_identity_0.8": 140,
+        "identity_0.8_plus_candidate_publication": 69
+      },
+      "models_by_split_protocol": {
+        "exact_sequence_group": {
+          "median_dummy": {
+            "MAE_log2_MIC": {
+              "mean": 1.955872752595841,
+              "sd": 0.14615452284322653
+            },
+            "RMSE_log2_MIC": {
+              "mean": 2.62534480057271,
+              "sd": 0.28914095702708836
+            },
+            "R2_log2_MIC": {
+              "mean": -0.06105001495349209,
+              "sd": 0.04440882423771404
+            },
+            "MAE_fold_change": {
+              "mean": 3.898744088888958,
+              "sd": 0.37389138432809205
+            }
+          },
+          "ridge": {
+            "MAE_log2_MIC": {
+              "mean": 1.5246252174501869,
+              "sd": 0.1339624959632913
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.97919600734282,
+              "sd": 0.2310545836422779
+            },
+            "R2_log2_MIC": {
+              "mean": 0.363347058226302,
+              "sd": 0.2107490872764667
+            },
+            "MAE_fold_change": {
+              "mean": 2.8890647048114184,
+              "sd": 0.2526877027543679
+            }
+          },
+          "svr_rbf": {
+            "MAE_log2_MIC": {
+              "mean": 1.3365663543879651,
+              "sd": 0.08597229346363193
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.8006643972788487,
+              "sd": 0.23751242957753282
+            },
+            "R2_log2_MIC": {
+              "mean": 0.486363589031438,
+              "sd": 0.13162147471730076
+            },
+            "MAE_fold_change": {
+              "mean": 2.530036291187796,
+              "sd": 0.15346205192652676
+            }
+          },
+          "random_forest": {
+            "MAE_log2_MIC": {
+              "mean": 1.2711897985048606,
+              "sd": 0.07893540241785729
+            },
+            "RMSE_log2_MIC": {
+              "mean": 1.62726481037966,
+              "sd": 0.1800040103462827
+            },
+            "R2_log2_MIC": {
+              "mean": 0.5641892903763326,
+              "sd": 0.15300936540067034
+            },
+            "MAE_fold_change": {
+              "mean": 2.417208835832921,
+              "sd": 0.13158570607796
+            }
+          }
+        },
+        "global_edit_identity_0.8": {
+          "median_dummy": {
+            "MAE_log2_MIC": {
+              "mean": 2.433302734385488,
+              "sd": 0.6947946765009508
+            },
+            "RMSE_log2_MIC": {
+              "mean": 3.1287877287760133,
+              "sd": 0.8147966070307145
+            },
+            "R2_log2_MIC": {
+              "mean": -0.2770632995781904,
+              "sd": 0.1300146061594117
+            },
+            "MAE_fold_change": {
+              "mean": 6.043488324729798,
+              "sd": 2.825020663620887
+            }
+          },
+          "ridge": {
+            "MAE_log2_MIC": {
+              "mean": 2.492924876014759,
+              "sd": 0.6814743987118304
+            },
+            "RMSE_log2_MIC": {
+              "mean": 3.1477348787690884,
+              "sd": 0.8354353961879889
+            },
+            "R2_log2_MIC": {
+              "mean": -0.3269363823122921,
+              "sd": 0.3497944577837483
+            },
+            "MAE_fold_change": {
+              "mean": 6.2326552903777,
+              "sd": 2.617037745517189
+            }
+          },
+          "svr_rbf": {
+            "MAE_log2_MIC": {
+              "mean": 2.3225331858962464,
+              "sd": 0.6528763646455231
+            },
+            "RMSE_log2_MIC": {
+              "mean": 2.966482730032486,
+              "sd": 0.7867400350992217
+            },
+            "R2_log2_MIC": {
+              "mean": -0.14355350457102797,
+              "sd": 0.1689127536307103
+            },
+            "MAE_fold_change": {
+              "mean": 5.494703317643396,
+              "sd": 2.21207575954316
+            }
+          },
+          "random_forest": {
+            "MAE_log2_MIC": {
+              "mean": 2.2757674526527203,
+              "sd": 0.7047593458139039
+            },
+            "RMSE_log2_MIC": {
+              "mean": 2.887537766150416,
+              "sd": 0.8554955773531292
+            },
+            "R2_log2_MIC": {
+              "mean": -0.06260288396847573,
+              "sd": 0.19417587249516033
+            },
+            "MAE_fold_change": {
+              "mean": 5.38421169509364,
+              "sd": 2.217119037771143
+            }
+          }
+        },
+        "identity_0.8_plus_candidate_publication": {
+          "median_dummy": {
+            "MAE_log2_MIC": {
+              "mean": 2.249578057844022,
+              "sd": 0.684787049509278
+            },
+            "RMSE_log2_MIC": {
+              "mean": 2.8911786197553573,
+              "sd": 0.8214065416712705
+            },
+            "R2_log2_MIC": {
+              "mean": -0.21171506175361382,
+              "sd": 0.2423115881779268
+            },
+            "MAE_fold_change": {
+              "mean": 5.332740299098518,
+              "sd": 2.6565050723930814
+            }
+          },
+          "ridge": {
+            "MAE_log2_MIC": {
+              "mean": 2.423271227769189,
+              "sd": 0.47222750684513876
+            },
+            "RMSE_log2_MIC": {
+              "mean": 3.1422925815244356,
+              "sd": 0.4996126998519886
+            },
+            "R2_log2_MIC": {
+              "mean": -0.6808317059490523,
+              "sd": 0.8191119825788868
+            },
+            "MAE_fold_change": {
+              "mean": 5.6573804292295975,
+              "sd": 1.8374825099971215
+            }
+          },
+          "svr_rbf": {
+            "MAE_log2_MIC": {
+              "mean": 2.2163436790328794,
+              "sd": 0.5445564706273353
+            },
+            "RMSE_log2_MIC": {
+              "mean": 2.886503180955278,
+              "sd": 0.5955621399614498
+            },
+            "R2_log2_MIC": {
+              "mean": -0.26865715350496544,
+              "sd": 0.24613055100436432
+            },
+            "MAE_fold_change": {
+              "mean": 5.0017582140210335,
+              "sd": 1.9911128819836208
+            }
+          },
+          "random_forest": {
+            "MAE_log2_MIC": {
+              "mean": 2.2602711589681137,
+              "sd": 0.4568927297576472
+            },
+            "RMSE_log2_MIC": {
+              "mean": 2.9425998177840107,
+              "sd": 0.45749024155673784
+            },
+            "R2_log2_MIC": {
+              "mean": -0.4388879459812677,
+              "sd": 0.6680953014294223
+            },
+            "MAE_fold_change": {
+              "mean": 5.040281871594507,
+              "sd": 1.634628225468663
+            }
+          }
+        }
+      }
+    }
+  },
+  "metrics_interpretation": "descriptive mean and SD across overlapping repeated holdouts; not a final unbiased benchmark"
+}

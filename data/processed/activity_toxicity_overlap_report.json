@@ -1,0 +1,14 @@
+{
+  "mic_peptide_ids": 1066,
+  "human_rbc_h50_candidate_peptide_ids": 208,
+  "peptide_ids_with_both_evidence_types": 208,
+  "overlap_with_exact_standard_aa_mic_and_h50": 73,
+  "matched_exact_mic_h50_pairs_with_same_raw_unit": {
+    "µM": 81,
+    "µg/ml": 39
+  },
+  "output_rows": 1066,
+  "join_key": "DBAASP peptide record ID; records are not joined on sequence alone",
+  "interpretation": "Evidence inventory only. Raw observations remain grouped by peptide but are not aggregated or converted into a therapeutic-index or safety score.",
+  "output": "data\\processed\\dbaasp_activity_toxicity_evidence_panel.csv"
+}

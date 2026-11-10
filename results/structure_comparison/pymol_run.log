@@ -1,0 +1,28 @@
+TITLE     Crystal structure of GDP-bound FtsZ from Acinetobacter baumannii
+ ExecutiveLoad-Detail: Detected mmCIF
+ CmdLoad: "data/external/ftsZ/22HQ.cif" loaded as "hq_raw".
+TITLE     Crystal structure of Apo FtsZ from Acinetobacter baumannii
+ ExecutiveLoad-Detail: Detected mmCIF
+ CmdLoad: "data/external/ftsZ/22HR.cif" loaded as "hr_raw".
+ Selector: found 2161 atoms.
+ Executive: object "hq_chainA_gdp" created.
+ Selector: found 2243 atoms.
+ Executive: object "hr_chainA_apo" created.
+ Selector: found 2243 atoms.
+ Executive: object "hr_aligned" created.
+ Match: read scoring matrix.
+ Match: assigning 307 x 306 pairwise scores.
+ MatchAlign: aligning residues (307 vs 306)...
+ MatchAlign: score 1539.000
+ ExecutiveAlign: 306 atoms aligned.
+ ExecutiveRMS: 15 atoms rejected during cycle 1 (RMSD=1.00).
+ ExecutiveRMS: 14 atoms rejected during cycle 2 (RMSD=0.68).
+ ExecutiveRMS: 11 atoms rejected during cycle 3 (RMSD=0.60).
+ ExecutiveRMS: 10 atoms rejected during cycle 4 (RMSD=0.55).
+ ExecutiveRMS: 5 atoms rejected during cycle 5 (RMSD=0.50).
+ Executive: RMSD =    0.486 (237 to 237 atoms)
+ Executive: Colored 2133 atoms.
+ Executive: Colored 2243 atoms.
+ Setting: cartoon_transparency set for 2243 atoms in object "hr_aligned".
+
+--- STDERR ---

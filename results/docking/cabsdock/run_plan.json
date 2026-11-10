@@ -1,0 +1,28 @@
+{
+  "status": "commands_prepared_not_executed",
+  "candidate_count": 10,
+  "receptor_states": [
+    "22HR_chainA_apo.pdb",
+    "22HQ_chainA_GDPbound.pdb"
+  ],
+  "seeds": [
+    104729,
+    130363,
+    155921
+  ],
+  "sampling": {
+    "mc_annealing": 20,
+    "mc_cycles": 50,
+    "mc_steps": 200
+  },
+  "candidate_panel_sha256": "5e3ec6949703217d7a0dc472b6af88fb317a96882181234f746a7e922d533160",
+  "receptor_sha256": {
+    "22HR_chainA_apo.pdb": "c816ae42590bc4b93766de740510f36d5bd724b40928e8d1ae1d9496952fcea1",
+    "22HQ_chainA_GDPbound.pdb": "fc25cdaa9083ed55037162f1b60305caacc3494b1701fa901588111b3dc972ae"
+  },
+  "run_count": 60,
+  "run_matrix": "results\\docking\\cabsdock\\run_matrix.csv",
+  "shell_script": "scripts\\docking\\run_cabsdock_panel.sh",
+  "parameters_source": "Official CABS-flex standalone 3 examples and options reference; workflow remains exploratory and unvalidated on an AMP-FtsZ reference complex.",
+  "interpretation": "CABSdock scores are method-specific pose rankings, not binding free energy or measured affinity."
+}

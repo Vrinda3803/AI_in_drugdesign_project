@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1322">
+  <title>AMP Evidence Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="rail" aria-label="Project navigation">
+      <div class="brand-mark" aria-hidden="true">A<span>+</span></div>
+      <div class="rail-line"></div>
+      <div class="rail-label">RESEARCH<br>WORKBENCH</div>
+      <div class="rail-bottom"><span class="pulse"></span> LOCAL SNAPSHOT</div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="breadcrumb">ANTIMICROBIAL PEPTIDES <span>/</span> EVIDENCE LOOKUP</div>
+        <div class="snapshot"><span class="snapshot-dot"></span> DATABASE SNAPSHOT <strong id="snapshot-date">—</strong></div>
+      </header>
+
+      <section class="intro">
+        <div class="eyebrow">A. BAUMANNII · CANDIDATE EXPLORER</div>
+        <h1>AMP Design <span>Workbench</span></h1>
+        <p>Select the project bacterium and generate a source-informed AMP hypothesis with its available activity, docking, and toxicity evidence.</p>
+      </section>
+
+      <section class="workflow-panel" aria-label="Generate an AMP candidate">
+        <div class="workflow-copy">
+          <div class="workflow-kicker">CANDIDATE GENERATION</div>
+          <h2>Start with a bacterium</h2>
+          <p>The current research dataset and candidate design rules cover <em>Acinetobacter baumannii</em>.</p>
+        </div>
+        <div class="workflow-controls">
+          <label for="bacterium-select">BACTERIUM</label>
+          <div class="workflow-actions">
+            <select id="bacterium-select" aria-label="Select bacterium">
+              <option value="Acinetobacter baumannii">Acinetobacter baumannii</option>
+            </select>
+            <button id="generate-candidate" type="button" class="generate-button">Generate AMP sequence <span aria-hidden="true">→</span></button>
+          </div>
+          <div id="generation-status" class="generation-status">Uses the project's source-informed B2RP analogue hypotheses.</div>
+        </div>
+      </section>
+
+      <section class="lookup-panel" aria-label="Peptide lookup">
+        <div class="lookup-icon" aria-hidden="true">⌕</div>
+        <div class="lookup-field">
+          <label for="search">FIND A PEPTIDE</label>
+          <input id="search" type="search" autocomplete="off" placeholder="Search by name, sequence, or record ID…">
+        </div>
+        <button id="clear-search" class="clear-button" type="button" title="Clear search" aria-label="Clear search">×</button>
+        <div id="results" class="search-results" role="listbox" aria-label="Matching peptides" hidden></div>
+      </section>
+
+      <div id="load-state" class="load-state">Loading the local peptide snapshot…</div>
+
+      <section id="record-view" hidden>
+        <div class="generated-output-banner" id="generated-output-banner" hidden>
+          <div><span class="output-check">✓</span><strong>Candidate output ready</strong><span id="generated-method"></span></div>
+          <span class="output-disclaimer">Research hypothesis · not experimentally validated</span>
+        </div>
+        <div class="selected-row">
+          <div>
+            <div class="record-kicker"><span class="record-dot"></span><span id="source-label">DBAASP RECORD</span><span id="record-id" class="record-id"></span></div>
+            <h2 id="peptide-name"></h2>
+            <div id="peptide-aliases" class="aliases"></div>
+          </div>
+          <div id="candidate-badge" class="candidate-badge" hidden>GENERATED HYPOTHESIS</div>
+        </div>
+
+        <div class="evidence-grid">
+          <article class="evidence-card sequence-card">
+            <div class="card-heading">
+              <div class="card-index">01</div>
+              <div><div class="card-title">AMP sequence</div><div class="card-subtitle">PRIMARY STRUCTURE</div></div>
+              <button id="copy-sequence" class="copy-button" type="button"><span aria-hidden="true">▣</span> Copy</button>
+            </div>
+            <div id="sequence" class="sequence-text"></div>
+            <div id="modification-note" class="modification-note"></div>
+            <div class="sequence-footer"><span id="length-label"></span><span>Source sequence notation preserved</span></div>
+          </article>
+
+          <article class="evidence-card docking-card">
+            <div class="card-heading">
+              <div class="card-index">02</div>
+              <div><div class="card-title">FtsZ docking</div><div class="card-subtitle">A. BAUMANNII TARGET</div></div>
+            </div>
+            <div class="docking-state"><span class="state-icon">—</span><span id="docking-status">Not run</span></div>
+              <div id="docking-score-label" class="score-label">DOCKING SCORE</div>
+            <div id="docking-score" class="score-value">Unavailable</div>
+            <p id="docking-note" class="muted-note">Peptide docking has not been run. No score is available for this record.</p>
+            <a id="docking-job-link" class="docking-job-link" href="#" target="_blank" rel="noreferrer" hidden>View 3D poses and clusters <span aria-hidden="true">↗</span></a>
+            <div class="target-foot">Target structures on file <span>22HQ · 22HR</span></div>
+          </article>
+        </div>
+
+        <article class="evidence-card activity-card">
+          <div class="card-heading">
+            <div class="card-index">03</div>
+            <div><div class="card-title">Antibacterial activity</div><div class="card-subtitle">SOURCE-REPORTED A. BAUMANNII MIC</div></div>
+            <div id="activity-count" class="tox-count"></div>
+          </div>
+          <div id="activity-empty" class="empty-evidence" hidden><div class="empty-icon">○</div><div><strong>No A. baumannii MIC records found for this peptide.</strong><p>Missing activity evidence is unknown, not an inactive result.</p></div></div>
+          <div id="activity-summary" class="tox-summary" hidden></div>
+          <div id="activity-table-wrap" class="table-wrap" hidden></div>
+          <div id="activity-caveat" class="tox-caveat" hidden><span>i</span> Raw concentrations and units are preserved. Isolate, medium, and publication context can differ; values are not pooled into a candidate score.</div>
+        </article>
+
+        <article class="evidence-card toxicity-card">
+          <div class="card-heading toxicity-heading">
+            <div class="card-index">04</div>
+            <div><div class="card-title">Toxicity evidence</div><div class="card-subtitle">SOURCE-REPORTED ASSAYS</div></div>
+            <div id="tox-count" class="tox-count"></div>
+          </div>
+          <div class="prediction-block">
+            <div class="prediction-label">MODEL PREDICTIONS <span>NOT EXPERIMENTAL</span></div>
+            <p class="prediction-method-note">Predictions use the one-letter FASTA sequence; terminal chemistry and other modifications are not encoded. Score type and units are shown as returned; PPV is listed separately when provided.</p>
+            <div id="tox-prediction-empty" class="prediction-empty">No ToxinPred3 or HemoPI2 output imported for this record.</div>
+            <div id="tox-predictions-wrap" class="table-wrap" hidden></div>
+          </div>
+          <div id="tox-empty" class="empty-evidence" hidden>
+            <div class="empty-icon">○</div>
+            <div><strong>No toxicity measurements found in this snapshot.</strong><p>Absence of a record does not indicate low toxicity or safety.</p></div>
+          </div>
+          <div id="tox-summary" class="tox-summary" hidden></div>
+          <div id="tox-table-wrap" class="table-wrap" hidden></div>
+          <div id="tox-caveat" class="tox-caveat" hidden><span>i</span> Results are displayed as reported. Assay type, cell line, dose, and units can differ; this is not a safety classification.</div>
+        </article>
+      </section>
+
+      <footer class="app-footer">
+        <div><span class="footer-mark">A+</span> AMP Evidence Explorer <span class="footer-divider">·</span> Research prototype</div>
+        <div>DBAASP + AbAMPdb <span class="footer-divider">·</span> Scores and assay values are shown only when present in source data</div>
+      </footer>
+    </main>
+  </div>
+  <script src="data/peptides.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

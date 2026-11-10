@@ -1,0 +1,20 @@
+{
+  "retrieved_utc": "2026-11-09T17:31:15.718115+00:00",
+  "source": "RCSB PDB official coordinate download and Data API",
+  "entries": [
+    {
+      "pdb_id": "22HQ",
+      "coordinate_file": "data\\external\\ftsZ\\22HQ.cif",
+      "coordinate_bytes": 1009383,
+      "coordinate_sha256": "e409667de09f02e8e2198cd84866ee52bde0f2512472b6e2baaebb7d7713d377",
+      "metadata_file": "data\\external\\ftsZ\\22HQ_rcsb_metadata.json"
+    },
+    {
+      "pdb_id": "22HR",
+      "coordinate_file": "data\\external\\ftsZ\\22HR.cif",
+      "coordinate_bytes": 529643,
+      "coordinate_sha256": "ba78d8d8c4d9f09ce909f7b70d5fb022602b9923a7c1c0c96ad3f474d3e36571",
+      "metadata_file": "data\\external\\ftsZ\\22HR_rcsb_metadata.json"
+    }
+  ]
+}

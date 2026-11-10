@@ -1,0 +1,40 @@
+{
+  "started_utc": "2026-11-09T17:30:38.3614575Z",
+  "finished_utc": "2026-11-09T17:31:16.5612586Z",
+  "refresh_dbaasp_requested": false,
+  "ui_build_requested": true,
+  "pymol_skipped": true,
+  "completed_stages": [
+    "scripts/data_collection/prepare_amp_datasets.py",
+    "scripts/preprocessing/parse_mic_observations.py",
+    "scripts/features/engineer_sequence_features.py",
+    "scripts/preprocessing/extract_resistant_subcohort.py",
+    "scripts/preprocessing/extract_paper_review_panel.py",
+    "scripts/preprocessing/extract_toxicity_records.py",
+    "scripts/preprocessing/prepare_human_rbc_h50_candidates.py",
+    "scripts/preprocessing/build_activity_toxicity_evidence_panel.py",
+    "scripts/activity_prediction/build_b2rp_lead_benchmark.py",
+    "scripts/sequence_generation/generate_b2rp_hypotheses.py",
+    "scripts/sequence_generation/export_candidate_fasta.py",
+    "scripts/activity_prediction/build_multiobjective_candidate_priority.py",
+    "scripts/activity_prediction/mic_regression_baselines.py",
+    "scripts/activity_prediction/mic_relative_classifier.py",
+    "scripts/activity_prediction/h50_regression_baselines.py",
+    "scripts/docking/acquire_ftsZ_structures.py",
+    "scripts/docking/summarize_ftsZ_inventory.py",
+    "scripts/docking/prepare_cabsdock_run_matrix.py",
+    "scripts/docking/summarize_cabsdock_runs.py",
+    "ui/build_ui_data.py"
+  ],
+  "external_safety_predictions": "imported_externally; 30 normalized rows; not submitted by local pipeline",
+  "cabsdock": "10 CABS-dock web jobs returned representative models and cluster tables; no single binding-affinity score is reported",
+  "external_safety_prediction_rows": 30,
+  "cabsdock_web_job_count": 10,
+  "cabsdock_web_job_status_counts": {
+    "completed_results_available": 10
+  },
+  "cabsdock_model_pdb_count": 19,
+  "cabsdock_model1_contact_summary_candidates": 10,
+  "cabsdock_lead_full_ensemble_models": 10,
+  "cabsdock_contact_analysis": "Heavy-atom geometric contact summaries; not docking affinity or experimental binding"
+}

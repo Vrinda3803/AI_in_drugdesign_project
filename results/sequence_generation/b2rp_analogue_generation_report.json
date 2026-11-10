@@ -1,0 +1,23 @@
+{
+  "seed_sequence": "GIWDTIKSMGKVFAGKILQNL",
+  "seed_name": "B2RP parent; source paper reports C-terminal amide",
+  "source_sar_pmid": "19793185",
+  "known_sequence_panel_size": 981,
+  "candidate_sequences_total_including_controls": 9,
+  "generated_hypotheses": 5,
+  "hypotheses_not_found_in_local_panel": 5,
+  "hypothesis_labels": [
+    "D4R_hypothesis",
+    "L18R_hypothesis",
+    "D4K_L18R_hypothesis",
+    "D4R_L18K_hypothesis",
+    "D4R_L18R_hypothesis"
+  ],
+  "design_rule": "Use only source-supported positions 4 and 18; explore Arg in place of Lys as an explicit, unvalidated basic-residue hypothesis. Do not use the weak MIC regressor to score candidates.",
+  "novelty_scope": "Exact sequence absence from the local 981-sequence feature panel only; no global literature/patent novelty claim.",
+  "prediction_scope": "No MIC, hemolysis, safety, uptake, target-binding, or efficacy predictions are made.",
+  "outputs": [
+    "results\\sequence_generation\\b2rp_analogue_hypotheses.csv",
+    "results\\sequence_generation\\b2rp_analogue_generation_report.json"
+  ]
+}

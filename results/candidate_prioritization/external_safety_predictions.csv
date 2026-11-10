@@ -1,0 +1,31 @@
+﻿candidate_id,sequence,predictor,model,endpoint,prediction,score_name,score,score_unit,ppv,threshold,run_date
+B2RP_parent,GIWDTIKSMGKVFAGKILQNL,ToxinPred3,Hybrid ET+MERCI,peptide toxicity classification,Toxin,Hybrid Score,1.0,model score,1.0,0.38,2026-11-09
+D4K,GIWKTIKSMGKVFAGKILQNL,ToxinPred3,Hybrid ET+MERCI,peptide toxicity classification,Toxin,Hybrid Score,0.9,model score,1.0,0.38,2026-11-09
+L18K,GIWDTIKSMGKVFAGKIKQNL,ToxinPred3,Hybrid ET+MERCI,peptide toxicity classification,Toxin,Hybrid Score,0.85,model score,0.954,0.38,2026-11-09
+D4K_L18K,GIWKTIKSMGKVFAGKIKQNL,ToxinPred3,Hybrid ET+MERCI,peptide toxicity classification,Toxin,Hybrid Score,0.815,model score,0.909,0.38,2026-11-09
+D4R_hypothesis,GIWRTIKSMGKVFAGKILQNL,ToxinPred3,Hybrid ET+MERCI,peptide toxicity classification,Toxin,Hybrid Score,0.9,model score,1.0,0.38,2026-11-09
+L18R_hypothesis,GIWDTIKSMGKVFAGKIRQNL,ToxinPred3,Hybrid ET+MERCI,peptide toxicity classification,Non-Toxin,Hybrid Score,0.38,model score,0.34,0.38,2026-11-09
+D4K_L18R_hypothesis,GIWKTIKSMGKVFAGKIRQNL,ToxinPred3,Hybrid ET+MERCI,peptide toxicity classification,Non-Toxin,Hybrid Score,0.285,model score,0.216,0.38,2026-11-09
+D4R_L18K_hypothesis,GIWRTIKSMGKVFAGKIKQNL,ToxinPred3,Hybrid ET+MERCI,peptide toxicity classification,Toxin,Hybrid Score,0.81,model score,0.902,0.38,2026-11-09
+D4R_L18R_hypothesis,GIWRTIKSMGKVFAGKIRQNL,ToxinPred3,Hybrid ET+MERCI,peptide toxicity classification,Non-Toxin,Hybrid Score,0.325,model score,0.268,0.38,2026-11-09
+B2RP_top_published_lead_control,GIWKTIKSMGKVFAGAIKQNL,ToxinPred3,Hybrid ET+MERCI,peptide toxicity classification,Toxin,Hybrid Score,0.69,model score,0.745,0.38,2026-11-09
+B2RP_parent,GIWDTIKSMGKVFAGKILQNL,HemoPI2,Random Forest Regressor,predicted hemolysis concentration,Hemolytic,HC50,93.121,µM,,,2026-11-09
+B2RP_top_published_lead_control,GIWKTIKSMGKVFAGAIKQNL,HemoPI2,Random Forest Regressor,predicted hemolysis concentration,Non-Hemolytic,HC50,148.71,µM,,,2026-11-09
+D4K_L18K,GIWKTIKSMGKVFAGKIKQNL,HemoPI2,Random Forest Regressor,predicted hemolysis concentration,Non-Hemolytic,HC50,181.481,µM,,,2026-11-09
+D4K_L18R_hypothesis,GIWKTIKSMGKVFAGKIRQNL,HemoPI2,Random Forest Regressor,predicted hemolysis concentration,Non-Hemolytic,HC50,167.91,µM,,,2026-11-09
+D4K,GIWKTIKSMGKVFAGKILQNL,HemoPI2,Random Forest Regressor,predicted hemolysis concentration,Non-Hemolytic,HC50,105.305,µM,,,2026-11-09
+D4R_hypothesis,GIWRTIKSMGKVFAGKILQNL,HemoPI2,Random Forest Regressor,predicted hemolysis concentration,Non-Hemolytic,HC50,113.017,µM,,,2026-11-09
+D4R_L18K_hypothesis,GIWRTIKSMGKVFAGKIKQNL,HemoPI2,Random Forest Regressor,predicted hemolysis concentration,Non-Hemolytic,HC50,176.033,µM,,,2026-11-09
+D4R_L18R_hypothesis,GIWRTIKSMGKVFAGKIRQNL,HemoPI2,Random Forest Regressor,predicted hemolysis concentration,Non-Hemolytic,HC50,164.307,µM,,,2026-11-09
+L18K,GIWDTIKSMGKVFAGKIKQNL,HemoPI2,Random Forest Regressor,predicted hemolysis concentration,Non-Hemolytic,HC50,171.089,µM,,,2026-11-09
+L18R_hypothesis,GIWDTIKSMGKVFAGKIRQNL,HemoPI2,Random Forest Regressor,predicted hemolysis concentration,Non-Hemolytic,HC50,159.164,µM,,,2026-11-09
+B2RP_parent,GIWDTIKSMGKVFAGKILQNL,HemoPI2,Hybrid1 ESM2-t6+MERCI,erythrocyte hemolysis classification,Non-Hemolytic,Hybrid Score,0.0,model score,,0.58,2026-11-09
+B2RP_top_published_lead_control,GIWKTIKSMGKVFAGAIKQNL,HemoPI2,Hybrid1 ESM2-t6+MERCI,erythrocyte hemolysis classification,Non-Hemolytic,Hybrid Score,0.0,model score,,0.58,2026-11-09
+D4K_L18K,GIWKTIKSMGKVFAGKIKQNL,HemoPI2,Hybrid1 ESM2-t6+MERCI,erythrocyte hemolysis classification,Non-Hemolytic,Hybrid Score,0.0,model score,,0.58,2026-11-09
+D4K_L18R_hypothesis,GIWKTIKSMGKVFAGKIRQNL,HemoPI2,Hybrid1 ESM2-t6+MERCI,erythrocyte hemolysis classification,Non-Hemolytic,Hybrid Score,0.0,model score,,0.58,2026-11-09
+D4K,GIWKTIKSMGKVFAGKILQNL,HemoPI2,Hybrid1 ESM2-t6+MERCI,erythrocyte hemolysis classification,Non-Hemolytic,Hybrid Score,0.0,model score,,0.58,2026-11-09
+D4R_hypothesis,GIWRTIKSMGKVFAGKILQNL,HemoPI2,Hybrid1 ESM2-t6+MERCI,erythrocyte hemolysis classification,Non-Hemolytic,Hybrid Score,0.0,model score,,0.58,2026-11-09
+D4R_L18K_hypothesis,GIWRTIKSMGKVFAGKIKQNL,HemoPI2,Hybrid1 ESM2-t6+MERCI,erythrocyte hemolysis classification,Non-Hemolytic,Hybrid Score,0.0,model score,,0.58,2026-11-09
+D4R_L18R_hypothesis,GIWRTIKSMGKVFAGKIRQNL,HemoPI2,Hybrid1 ESM2-t6+MERCI,erythrocyte hemolysis classification,Non-Hemolytic,Hybrid Score,0.0,model score,,0.58,2026-11-09
+L18K,GIWDTIKSMGKVFAGKIKQNL,HemoPI2,Hybrid1 ESM2-t6+MERCI,erythrocyte hemolysis classification,Non-Hemolytic,Hybrid Score,0.0,model score,,0.58,2026-11-09
+L18R_hypothesis,GIWDTIKSMGKVFAGKIRQNL,HemoPI2,Hybrid1 ESM2-t6+MERCI,erythrocyte hemolysis classification,Non-Hemolytic,Hybrid Score,0.0,model score,,0.58,2026-11-09

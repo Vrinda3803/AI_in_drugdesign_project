@@ -1,0 +1,18 @@
+{
+  "input": "data\\processed\\dbaasp_a_baumannii_mic_parsed.csv",
+  "output": "data\\processed\\dbaasp_a_baumannii_resistant_isolate_records.csv",
+  "selection_rule": "strain_or_isolate_note_raw explicitly matches MDR, XDR, PDR, CRAB, carbapenem-resistant, multidrug-resistant, or extensively drug-resistant",
+  "publication_title_used_for_selection": false,
+  "source_rows_total": 1834,
+  "selected_activity_rows": 612,
+  "selected_mic_rows": 612,
+  "selected_exact_point_mic_rows": 406,
+  "unique_nonempty_sequences": 452,
+  "unique_valid_standard_aa_sequences": 382,
+  "unit_raw_counts": {
+    "µg/ml": 411,
+    "µM": 200,
+    "": 1
+  },
+  "interpretation": "An explicitly labeled resistant-isolate subcohort for audit and future stratified evaluation. It is not a standardized MDR-only benchmark; resistance terms and assay conditions require source-paper review."
+}
