@@ -1,0 +1,556 @@
+{
+  "retrieved_utc": "2026-11-10T15:30:00.203871+00:00",
+  "source": "UniProtKB REST API",
+  "query": "reviewed:true AND organism_id:562 AND length:[101 TO 1000]",
+  "fields": "accession,protein_name,organism_name,length,sequence,keyword,cc_function",
+  "source_url": "https://rest.uniprot.org/uniprotkb/search?query=reviewed%3Atrue+AND+organism_id%3A562+AND+length%3A%5B101+TO+1000%5D&format=tsv&fields=accession%2Cprotein_name%2Corganism_name%2Clength%2Csequence%2Ckeyword%2Ccc_function&size=500",
+  "parent_records_returned": 500,
+  "eligible_parent_proteins": 365,
+  "positive_sequences_for_length_matching": 974,
+  "negative_fragments_written": 974,
+  "excluded_parent_records": [
+    {
+      "accession": "A0A1C3NEV1",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P06736",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P62593",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P28585",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q47396",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P00646",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P06717",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q6EZC3",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "A0A649V088",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P06875",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0DUW5",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q6EZC2",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q8KSA6",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "A0A0R6L508",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P13661",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q5U7L7",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "A8C927",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "C0HMD9",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P00551",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P08716",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0ACT4",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P43528",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0C002",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q47066",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P08083",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P09883",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q79EC5",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P10089",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P32890",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0AC11",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q47112",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q9S169",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "E1ANH6",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P00382",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P04479",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P06716",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P09984",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0AG05",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0DV36",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P43529",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q46668",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q47258",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "A0A4C3GMC1",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0A9Z7",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0ABQ7",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P14509",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P15484",
+      "reason": "parent sequence invalid or outside 101-1000 aa"
+    },
+    {
+      "accession": "P17999",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P22708",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P27422",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q3YL97",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q8VPC3",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q93LM8",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q9EXN5",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q9X2W0",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "O08337",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P00645",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P02980",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P04419",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P09882",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P09985",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0A1V9",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0AD63",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0CK94",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P11731",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P13976",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P17998",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P22520",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P78218",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q47125",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q47502",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q59397",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "O69395",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P00484",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0C2H2",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0DYD2",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P22615",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P62590",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q04515",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q46669",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q46670",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q59408",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P02978",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P04483",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P05819",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P10738",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P13810",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P22522",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P35695",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P62577",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q47108",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q47500",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "J9RX10",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P00557",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P02982",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P05820",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P08701",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P0AE04",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P13018",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P23186",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P02981",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P02985",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P05529",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P05530",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P05789",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P18808",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P22426",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P26838",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P33787",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P33788",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q2PT27",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q46996",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q9X2V9",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P05528",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P06739",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P07684",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P09986",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P12056",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P13812",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P13973",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P22519",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q9EXN6",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q9X2V8",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P03038",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P03039",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P08702",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P33637",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q07282",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "Q52042",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P07294",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P09182",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P18000",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P18002",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P18807",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    },
+    {
+      "accession": "P21337",
+      "reason": "AMP/defense/toxin-related annotation or name"
+    }
+  ],
+  "fragment_rule": "Deterministic random seed 42; fragment lengths sampled from local positive sequences; fragment sequence exact matches to positives excluded.",
+  "filter_rule": "Reviewed E. coli (taxon 562) parent proteins 101-1000 aa, standard amino acids; omit AMP/antibiotic/bacteriocin/defense/immunity/toxin/hemolysin-related names, keywords, or function text.",
+  "label_semantics": "Weak/putative negative only. UniProt annotation absence and parental protein function do not prove that an isolated fragment lacks antimicrobial activity."
+}

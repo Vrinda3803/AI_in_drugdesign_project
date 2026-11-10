@@ -1,0 +1,193 @@
+{
+  "scope": "Species-grouped, unit-separated exact-point MIC feasibility baselines from the cached A. baumannii-selected DBAASP peptide panel.",
+  "endpoint": "Median log2 MIC by exact peptide sequence and broad target group; raw conditions remain in source evidence CSV.",
+  "evaluation": "Five repeated grouped 80/20 holdouts; >=80% edit-identity components joined across candidate PubMed IDs.",
+  "cohorts": {
+    "A. baumannii|micromolar": {
+      "status": "exploratory grouped CV",
+      "n_sequences": 292,
+      "group_components": 78,
+      "median_MIC_source_unit": 4.0,
+      "mean_metrics": {
+        "median_dummy": {
+          "mae_log2_mic": 1.4927773657697545,
+          "rmse_log2_mic": 1.8190635663733776,
+          "r2_log2_mic": -0.05375200731848375
+        },
+        "random_forest": {
+          "mae_log2_mic": 1.4552726330675274,
+          "rmse_log2_mic": 1.7438510584898332,
+          "r2_log2_mic": 0.027284223005092367
+        }
+      }
+    },
+    "A. baumannii|ug_per_ml": {
+      "status": "exploratory grouped CV",
+      "n_sequences": 301,
+      "group_components": 82,
+      "median_MIC_source_unit": 11.313708498984761,
+      "mean_metrics": {
+        "median_dummy": {
+          "mae_log2_mic": 2.5677001975803595,
+          "rmse_log2_mic": 3.3032344097353827,
+          "r2_log2_mic": -0.24463521093716772
+        },
+        "random_forest": {
+          "mae_log2_mic": 2.3118582284297124,
+          "rmse_log2_mic": 2.93218236772322,
+          "r2_log2_mic": 0.02004309219743756
+        }
+      }
+    },
+    "E. coli|micromolar": {
+      "status": "exploratory grouped CV",
+      "n_sequences": 319,
+      "group_components": 91,
+      "median_MIC_source_unit": 5.370474839341489,
+      "mean_metrics": {
+        "median_dummy": {
+          "mae_log2_mic": 1.5644052412289344,
+          "rmse_log2_mic": 1.8767055183007522,
+          "r2_log2_mic": -0.11519712907941657
+        },
+        "random_forest": {
+          "mae_log2_mic": 1.416125479911172,
+          "rmse_log2_mic": 1.7619512323983693,
+          "r2_log2_mic": -0.011419663457549656
+        }
+      }
+    },
+    "E. coli|ug_per_ml": {
+      "status": "exploratory grouped CV",
+      "n_sequences": 319,
+      "group_components": 90,
+      "median_MIC_source_unit": 11.313708498984761,
+      "mean_metrics": {
+        "median_dummy": {
+          "mae_log2_mic": 1.410422369175989,
+          "rmse_log2_mic": 1.8001540925750177,
+          "r2_log2_mic": -0.11943881758187205
+        },
+        "random_forest": {
+          "mae_log2_mic": 1.3083255756225536,
+          "rmse_log2_mic": 1.6637110039366547,
+          "r2_log2_mic": 0.05569495131590703
+        }
+      }
+    },
+    "K. pneumoniae|micromolar": {
+      "status": "exploratory grouped CV",
+      "n_sequences": 181,
+      "group_components": 57,
+      "median_MIC_source_unit": 8.0,
+      "mean_metrics": {
+        "median_dummy": {
+          "mae_log2_mic": 1.4355317915809311,
+          "rmse_log2_mic": 1.7625322168856676,
+          "r2_log2_mic": -0.06515633123994569
+        },
+        "random_forest": {
+          "mae_log2_mic": 1.4709045706224022,
+          "rmse_log2_mic": 1.8112177563940848,
+          "r2_log2_mic": -0.13930311414418534
+        }
+      }
+    },
+    "K. pneumoniae|ug_per_ml": {
+      "status": "exploratory grouped CV",
+      "n_sequences": 164,
+      "group_components": 57,
+      "median_MIC_source_unit": 16.0,
+      "mean_metrics": {
+        "median_dummy": {
+          "mae_log2_mic": 1.9919418129842412,
+          "rmse_log2_mic": 2.5573616389607494,
+          "r2_log2_mic": -0.32558807735252726
+        },
+        "random_forest": {
+          "mae_log2_mic": 1.8281164437689879,
+          "rmse_log2_mic": 2.3414719871780343,
+          "r2_log2_mic": -0.12669476574774677
+        }
+      }
+    },
+    "P. aeruginosa|micromolar": {
+      "status": "exploratory grouped CV",
+      "n_sequences": 269,
+      "group_components": 85,
+      "median_MIC_source_unit": 8.0,
+      "mean_metrics": {
+        "median_dummy": {
+          "mae_log2_mic": 1.2468785416439991,
+          "rmse_log2_mic": 1.5860452858283423,
+          "r2_log2_mic": -0.07661139445661216
+        },
+        "random_forest": {
+          "mae_log2_mic": 1.1940605173940055,
+          "rmse_log2_mic": 1.4795821818657295,
+          "r2_log2_mic": -0.028088930386533418
+        }
+      }
+    },
+    "P. aeruginosa|ug_per_ml": {
+      "status": "exploratory grouped CV",
+      "n_sequences": 271,
+      "group_components": 93,
+      "median_MIC_source_unit": 16.0,
+      "mean_metrics": {
+        "median_dummy": {
+          "mae_log2_mic": 2.062328912191078,
+          "rmse_log2_mic": 2.524336122435405,
+          "r2_log2_mic": -0.40837933665040477
+        },
+        "random_forest": {
+          "mae_log2_mic": 1.73211246577984,
+          "rmse_log2_mic": 2.1503737342853544,
+          "r2_log2_mic": -0.04367797641404851
+        }
+      }
+    },
+    "S. aureus|micromolar": {
+      "status": "exploratory grouped CV",
+      "n_sequences": 288,
+      "group_components": 93,
+      "median_MIC_source_unit": 4.999999999999999,
+      "mean_metrics": {
+        "median_dummy": {
+          "mae_log2_mic": 1.4482527176923177,
+          "rmse_log2_mic": 1.7574809296912755,
+          "r2_log2_mic": -0.1569913152756829
+        },
+        "random_forest": {
+          "mae_log2_mic": 1.4252150426019585,
+          "rmse_log2_mic": 1.7088630170526753,
+          "r2_log2_mic": -0.09956627299353973
+        }
+      }
+    },
+    "S. aureus|ug_per_ml": {
+      "status": "exploratory grouped CV",
+      "n_sequences": 303,
+      "group_components": 84,
+      "median_MIC_source_unit": 16.0,
+      "mean_metrics": {
+        "median_dummy": {
+          "mae_log2_mic": 1.5480573326058482,
+          "rmse_log2_mic": 1.9705355413331227,
+          "r2_log2_mic": -0.27604039875751807
+        },
+        "random_forest": {
+          "mae_log2_mic": 1.5445527054449415,
+          "rmse_log2_mic": 1.9429983770498027,
+          "r2_log2_mic": -0.242606926409591
+        }
+      }
+    }
+  },
+  "limits": [
+    "Other-organism records are only from the A. baumannii query-selected peptide subset.",
+    "Species groups combine strain/assay contexts and are not resistance-specific.",
+    "Only exact numeric MIC values are modeled; ranges and censored records are excluded.",
+    "Candidate PubMed mappings need source verification; there is no external validation set."
+  ]
+}

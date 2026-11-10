@@ -6,6 +6,12 @@ The completed data-driven feasibility study, its supported conclusions, and its 
 The item-by-item comparison with the original workflow is in
 `docs/planned_work_completion_matrix.md`; the lab team handoff is in
 `docs/experimental_validation_handoff.md`.
+The updated mid-review presentation, with speaker notes and the latest extension
+results, is in `deliverables/AMP_Project_Update_and_Viva_Presentation_Reviewed.pptx`.
+The mid-review completion map for the expanded AMP-generation plan, including
+separate AMP/non-AMP and LSTM extensions, multi-species evidence, target
+structures, and remaining gaps, is in
+[`extensions/PROJECT_COMPLETION_STATUS.md`](extensions/PROJECT_COMPLETION_STATUS.md).
 
 ## Current data
 
@@ -33,6 +39,10 @@ The item-by-item comparison with the original workflow is in
 - Ten downloaded models for the published-control job and a sequence-checked geometric contact summary: `results/docking/cabsdock/web_models/3682c266f3d6adc/` and `docs/cabsdock_pose_contact_review.md`.
 - Model-1 pose comparison and geometric contacts for all ten CABS-dock candidates: `docs/cabsdock_panel_model1_summary.md` and `results/docking/cabsdock/web_panel_model1_contact_summary.csv`.
 - Offline AMP Design Workbench for bacterium selection, source-informed sequence generation, MIC evidence, toxicity predictions, and live docking job status: `ui/README.md`.
+- Separate LSTM hypothesis set (50 sequences) and its training/validation report: `extensions/lstm_generation/output/`.
+- LSTM candidate descriptor and nearest local sequence audit (not an activity/safety model): `extensions/lstm_generation/output/lstm_candidate_audit.csv`.
+- Weak-label AMP-vs-putative-non-AMP grouped-CV prototype: `extensions/amp_binary_classifier/output/`.
+- Cross-species MIC evidence and grouped baseline results (five species): `extensions/multi_target_screening/output/`.
 
 The raw source values are retained. MIC units are not combined; ranges, censoring, and reported uncertainty stay distinguishable. AbAMPdb MIC values are not pooled because the export does not state units. Missing activity is not treated as inactivity.
 

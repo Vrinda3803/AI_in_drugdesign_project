@@ -1,0 +1,32 @@
+{
+  "records": 7744,
+  "unique_peptide_ids": 873,
+  "counts_by_target_group": {
+    "E. coli": 1983,
+    "S. aureus": 1895,
+    "A. baumannii": 1411,
+    "P. aeruginosa": 1479,
+    "K. pneumoniae": 976
+  },
+  "counts_by_target_and_unit": {
+    "E. coli | \u00b5M": 1163,
+    "S. aureus | \u00b5M": 985,
+    "A. baumannii | \u00b5M": 643,
+    "P. aeruginosa | \u00b5M": 738,
+    "S. aureus | \u00b5g/ml": 910,
+    "E. coli | \u00b5g/ml": 820,
+    "A. baumannii | \u00b5g/ml": 767,
+    "K. pneumoniae | \u00b5M": 464,
+    "P. aeruginosa | \u00b5g/ml": 740,
+    "K. pneumoniae | \u00b5g/ml": 512,
+    "P. aeruginosa | ": 1,
+    "A. baumannii | ": 1
+  },
+  "source_scope": "Cached DBAASP detail records downloaded for the A. baumannii query; other-target counts are a selected peptide subset, not a comprehensive species database.",
+  "limits": [
+    "MICs remain raw and unit-separated.",
+    "Species labels do not prove MDR status.",
+    "Same-peptide cross-target comparisons need strain and assay harmonization.",
+    "Candidate publication mappings are not fully source-paper verified."
+  ]
+}

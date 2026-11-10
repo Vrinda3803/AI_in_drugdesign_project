@@ -1,0 +1,29 @@
+{
+  "candidate_fasta": "lstm_hypotheses.fasta",
+  "candidate_count": 50,
+  "user_authorized": true,
+  "attempt_date": "2026-11-10",
+  "attempts": [
+    {
+      "tool": "ToxinPred3",
+      "endpoint": "https://webs.iiitd.edu.in/raghava/toxinpred3/prediction_action.php",
+      "intended_model": "Hybrid ET+MERCI",
+      "threshold": 0.38,
+      "status": "failed_no_result",
+      "observed": "Browser form interaction stalled; direct multipart request returned HTTP 400.",
+      "predictions_saved": false
+    },
+    {
+      "tool": "HemoPI2",
+      "endpoint": "https://webs.iiitd.edu.in/raghava/hemopi2/prediction_action.php",
+      "intended_models": [
+        "Random Forest Regressor (HC50)",
+        "Hybrid1 ESM2-t6+MERCI (classification, threshold 0.58)"
+      ],
+      "status": "failed_no_result",
+      "observed": "Browser form interaction stalled; direct multipart request returned HTTP 400.",
+      "predictions_saved": false
+    }
+  ],
+  "interpretation": "No toxicity or hemolysis prediction exists for the LSTM sequences. Do not infer safe, toxic, hemolytic, or non-hemolytic status from the failed submissions."
+}

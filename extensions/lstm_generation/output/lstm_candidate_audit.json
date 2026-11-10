@@ -1,0 +1,15 @@
+{
+  "input_fasta": "D:\\Documents\\ChatGPT\\AI_in_drug_design\\extensions\\lstm_generation\\output\\lstm_hypotheses.fasta",
+  "training_panel": "D:\\Documents\\ChatGPT\\AI_in_drug_design\\data\\processed\\sequence_provenance_panel.csv",
+  "candidates_audited": 50,
+  "training_sequences_compared": 960,
+  "invalid_sequences": [],
+  "exact_training_matches": 0,
+  "nearest_identity_estimate_definition": "1 - Levenshtein edit distance / max(candidate length, training sequence length); approximate global sequence similarity, not a biological alignment score.",
+  "feature_assumptions": "Linear peptide with unmodified free N/C termini; theoretical descriptors do not account for PTMs, cyclization, D-amino acids, or noncanonical residues.",
+  "limitations": [
+    "Descriptors do not predict antibacterial activity, toxicity, hemolysis, target binding, stability in vivo, or manufacturability.",
+    "Local similarity is not a comprehensive novelty search against external patent or sequence databases.",
+    "The LSTM validation loss is higher than its training loss, consistent with overfitting."
+  ]
+}

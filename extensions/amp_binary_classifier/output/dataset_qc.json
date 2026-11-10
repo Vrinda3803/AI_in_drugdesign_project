@@ -1,0 +1,15 @@
+{
+  "label_definition": "1=sequence present in local AbAMPdb/DBAASP panel; 0=UniProt-derived, length-matched putative-negative fragment",
+  "class_counts": {
+    "0": 974,
+    "1": 974
+  },
+  "negative_input_path": "D:\\Documents\\ChatGPT\\AI_in_drug_design\\extensions\\amp_binary_classifier\\data\\non_amp_sequences.csv",
+  "rejected_rows": [],
+  "positive_negative_exact_conflicts": [],
+  "limitations": [
+    "Negative fragments are weak labels and may have antimicrobial activity.",
+    "Lengths are sampled to match positives, but biological source and sequence-composition bias may inflate scores.",
+    "Grouping is only a leakage control, not independent external validation."
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "retrieved_utc": "2026-11-10T16:04:22.323289+00:00",
+  "sources": {
+    "experimental": "RCSB PDB official coordinate service",
+    "predicted": "AlphaFold Protein Structure Database API; precomputed AlphaFold models"
+  },
+  "artifacts": {
+    "A_baumannii_apo_22HR": {
+      "file": "extensions\\multi_target_screening\\structures\\A_baumannii_apo_22HR.cif",
+      "url": "https://files.rcsb.org/download/22HR.cif",
+      "bytes": 529643,
+      "sha256": "ba78d8d8c4d9f09ce909f7b70d5fb022602b9923a7c1c0c96ad3f474d3e36571"
+    },
+    "E_coli_FtsZ_6LL6": {
+      "file": "extensions\\multi_target_screening\\structures\\E_coli_FtsZ_6LL6.cif",
+      "url": "https://files.rcsb.org/download/6LL6.cif",
+      "bytes": 312639,
+      "sha256": "3a4906c3f0856a6a0dc62bc777367b31b52c8147e3bea70b7f1d44506a8f04ea"
+    },
+    "S_aureus_apo_3VPA": {
+      "file": "extensions\\multi_target_screening\\structures\\S_aureus_apo_3VPA.cif",
+      "url": "https://files.rcsb.org/download/3VPA.cif",
+      "bytes": 873872,
+      "sha256": "84d16946222c814a002b579df5df06326188289b11c498f5df1dba4479bebac8"
+    },
+    "E_coli_FtsZ_AFDB": {
+      "file": "extensions\\multi_target_screening\\structures\\E_coli_FtsZ_AFDB.pdb",
+      "url": "https://alphafold.ebi.ac.uk/files/AF-P0A9A6-F1-model_v6.pdb",
+      "bytes": 235061,
+      "sha256": "cbb10fd85bd499948fb514c158372194a8ebbaafa7078162b46da3c14e7e3100"
+    },
+    "S_aureus_FtsZ_AFDB": {
+      "file": "extensions\\multi_target_screening\\structures\\S_aureus_FtsZ_AFDB.pdb",
+      "url": "https://alphafold.ebi.ac.uk/files/AF-P0A030-F1-model_v6.pdb",
+      "bytes": 239030,
+      "sha256": "fa9d2e6eabfb9f5e9fd263b411aeefae0c50216a81f037525efd1514366f8017"
+    }
+  },
+  "alphafold_db_metadata": {
+    "E_coli_FtsZ_AFDB": {
+      "accession": "P0A9A6",
+      "entry_id": "AF-P0A9A6-F1",
+      "model_version": 6,
+      "global_metric_value": 82.75,
+      "global_metric_name": null,
+      "api_url": "https://alphafold.ebi.ac.uk/api/prediction/P0A9A6"
+    },
+    "S_aureus_FtsZ_AFDB": {
+      "accession": "P0A030",
+      "entry_id": "AF-P0A030-F1",
+      "model_version": 6,
+      "global_metric_value": 81.31,
+      "global_metric_name": null,
+      "api_url": "https://alphafold.ebi.ac.uk/api/prediction/P0A030"
+    }
+  },
+  "limits": [
+    "AFDB models are precomputed single-chain FtsZ predictions, not team-generated predictions.",
+    "The AFDB models are target structures, not structures of the peptide candidates.",
+    "FtsZ is intracellular; structural models do not establish peptide uptake, target engagement or antibacterial mechanism."
+  ]
+}

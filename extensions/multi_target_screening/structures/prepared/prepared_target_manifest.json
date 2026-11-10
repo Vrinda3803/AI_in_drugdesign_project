@@ -1,0 +1,55 @@
+{
+  "preparation": "Select longest standard-amino-acid chain; save protein atoms only, excluding heterogens, water, hydrogen and deuterium.",
+  "targets": {
+    "A_baumannii_apo_22HR": {
+      "source_file": "structures\\A_baumannii_apo_22HR.cif",
+      "source_sha256": "ba78d8d8c4d9f09ce909f7b70d5fb022602b9923a7c1c0c96ad3f474d3e36571",
+      "source_chain_id": "A",
+      "selected_sequence_length": 300,
+      "selected_sequence": "ARFTVFGVGGGGGNAVQHMVQSDIQGVKFVCANTDKQALDCMNAPFKIQLGEQSTGANPEVGQVAAEESREIIRQHLEGTDMVFVTAGMGTGTGAAPVVAEVAKEMGILTVGVVTTPFNFEGRRRQKSAERGIEALEAHVDSLIIIPNQRLLSVYGDISMKDAYKKADDVLLNAVRSIFDLVVNRGHINLDFADLKTAMSTRGYAMMGAGLGRGEDRARQAAEQAIRSPLLDNVNIINAKGVLINITGGDDITLRETEIITDVVNQIVDLDEGEIFYGTVFDPDARDELRVTVIATGLTL",
+      "prepared_file": "structures\\prepared\\A_baumannii_apo_22HR_protein_only.pdb",
+      "prepared_sha256": "f9bfe84b8fddf08eec679adbd88801ce5f6efea626954d0f0efadc1fb2bef093",
+      "caveat": "Protein-only inspection/receptor input; receptor protonation, side-chain optimization and docking validation are not performed here."
+    },
+    "E_coli_FtsZ_6LL6": {
+      "source_file": "structures\\E_coli_FtsZ_6LL6.cif",
+      "source_sha256": "3a4906c3f0856a6a0dc62bc777367b31b52c8147e3bea70b7f1d44506a8f04ea",
+      "source_chain_id": "A",
+      "selected_sequence_length": 301,
+      "selected_sequence": "AVIKVIGVGGGGGNAVEHMVRERIEGVEFFAVNTDAQALRKTAVGQTIQIGSLGAGANPEVGRNAADEDRDALRAALEGADMVFIAAGMGGGTGTGAAPVVAEVAKDLGILTVAVVTKPFNFEGKKRMAFAEQGITELSKHVDSLITIPNDKLLKVLGRGISLLDAFGAANDVLKGAVQGIAELITRPGLMNVDFADVRTVMSEMGYAMMGSGVASGEDRAEEAAEMAISSPLLEDIDLSGARGVLVNITAGFDLRLDEFETVGNTIRAFASDNATVVIGTSLDPDMNDELRVTVVATGIG",
+      "prepared_file": "structures\\prepared\\E_coli_FtsZ_6LL6_protein_only.pdb",
+      "prepared_sha256": "1163b2e6bb1629a38b8df3d96dea734226d98af433a050e34ce61bdb9ec287e5",
+      "caveat": "Protein-only inspection/receptor input; receptor protonation, side-chain optimization and docking validation are not performed here."
+    },
+    "S_aureus_apo_3VPA": {
+      "source_file": "structures\\S_aureus_apo_3VPA.cif",
+      "source_sha256": "84d16946222c814a002b579df5df06326188289b11c498f5df1dba4479bebac8",
+      "source_chain_id": "C",
+      "selected_sequence_length": 300,
+      "selected_sequence": "ATLKVIGVGGGGNNAVNRMIDNVEFIAINTDGQALNLSKAESKIQIGEKLTRGLGAGANPEIGKKAAEESREQIEDAIQGADMVFVTSGMGGGTGTGAAPVVAKIAKEMGALTVGVVTRPFSFEGRKRQTQAAAGVEAMKAAVDTLIVIPNDRLLDIVDKSTPMMEAFKEADNVLRQGVQGISDLIAVSGEVNLDFADVKTIMSNQGSALMGIGVSSGENRAVEAAKKAISSPLLETSIVGAQGVLMNITGGESLSLFEAQEAADIVQDAADEDVNMIFGTVINPELQDEIVVTVIATGF",
+      "prepared_file": "structures\\prepared\\S_aureus_apo_3VPA_protein_only.pdb",
+      "prepared_sha256": "ddb93e349738f43d4bf426666db1d521c9fa8c0d085c4f427a330cf7238beed9",
+      "caveat": "Protein-only inspection/receptor input; receptor protonation, side-chain optimization and docking validation are not performed here."
+    },
+    "E_coli_FtsZ_AFDB": {
+      "source_file": "structures\\E_coli_FtsZ_AFDB.pdb",
+      "source_sha256": "cbb10fd85bd499948fb514c158372194a8ebbaafa7078162b46da3c14e7e3100",
+      "source_chain_id": "A",
+      "selected_sequence_length": 383,
+      "selected_sequence": "MFEPMELTNDAVIKVIGVGGGGGNAVEHMVRERIEGVEFFAVNTDAQALRKTAVGQTIQIGSGITKGLGAGANPEVGRNAADEDRDALRAALEGADMVFIAAGMGGGTGTGAAPVVAEVAKDLGILTVAVVTKPFNFEGKKRMAFAEQGITELSKHVDSLITIPNDKLLKVLGRGISLLDAFGAANDVLKGAVQGIAELITRPGLMNVDFADVRTVMSEMGYAMMGSGVASGEDRAEEAAEMAISSPLLEDIDLSGARGVLVNITAGFDLRLDEFETVGNTIRAFASDNATVVIGTSLDPDMNDELRVTVVATGIGMDKRPEITLVTNKQVQQPVMDRYQQHGMAPLTQEQKPVAKVVNDNAPQTAKEPDYLDIPAFLRKQAD",
+      "prepared_file": "structures\\prepared\\E_coli_FtsZ_AFDB_protein_only.pdb",
+      "prepared_sha256": "12415f9ded8bab9cb56c9ef98f9c1f4992ffa549172b0a80e3ee42ed02db1b8b",
+      "caveat": "Protein-only inspection/receptor input; receptor protonation, side-chain optimization and docking validation are not performed here."
+    },
+    "S_aureus_FtsZ_AFDB": {
+      "source_file": "structures\\S_aureus_FtsZ_AFDB.pdb",
+      "source_sha256": "fa9d2e6eabfb9f5e9fd263b411aeefae0c50216a81f037525efd1514366f8017",
+      "source_chain_id": "A",
+      "selected_sequence_length": 390,
+      "selected_sequence": "MLEFEQGFNHLATLKVIGVGGGGNNAVNRMIDHGMNNVEFIAINTDGQALNLSKAESKIQIGEKLTRGLGAGANPEIGKKAAEESREQIEDAIQGADMVFVTSGMGGGTGTGAAPVVAKIAKEMGALTVGVVTRPFSFEGRKRQTQAAAGVEAMKAAVDTLIVIPNDRLLDIVDKSTPMMEAFKEADNVLRQGVQGISDLIAVSGEVNLDFADVKTIMSNQGSALMGIGVSSGENRAVEAAKKAISSPLLETSIVGAQGVLMNITGGESLSLFEAQEAADIVQDAADEDVNMIFGTVINPELQDEIVVTVIATGFDDKPTSHGRKSGSTGFGTSVNTSSNATSKDESFTSNSSNAQATDSVSERTHTTKEDDIPSFIRNREERRSRRTRR",
+      "prepared_file": "structures\\prepared\\S_aureus_FtsZ_AFDB_protein_only.pdb",
+      "prepared_sha256": "c67d729e9d57fe60c3ea62b73536961c2d0dc9eb36735441150420b739aebdfd",
+      "caveat": "Protein-only inspection/receptor input; receptor protonation, side-chain optimization and docking validation are not performed here."
+    }
+  }
+}

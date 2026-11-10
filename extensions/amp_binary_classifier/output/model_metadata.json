@@ -1,0 +1,72 @@
+{
+  "features": [
+    "length",
+    "molecular_weight_g_mol",
+    "net_charge_pH7",
+    "isoelectric_point",
+    "hydrophobicity_gravy",
+    "hydrophobic_moment",
+    "instability_index",
+    "AAC_A",
+    "AAC_C",
+    "AAC_D",
+    "AAC_E",
+    "AAC_F",
+    "AAC_G",
+    "AAC_H",
+    "AAC_I",
+    "AAC_K",
+    "AAC_L",
+    "AAC_M",
+    "AAC_N",
+    "AAC_P",
+    "AAC_Q",
+    "AAC_R",
+    "AAC_S",
+    "AAC_T",
+    "AAC_V",
+    "AAC_W",
+    "AAC_Y"
+  ],
+  "evaluation": "5 repeated 80/20 GroupShuffleSplit holdouts; groups join >=80% normalized edit identity components and fragments from the same UniProt parent accession",
+  "n_sequences": 1948,
+  "class_counts": {
+    "0": 974,
+    "1": 974
+  },
+  "group_count": 888,
+  "mean_metrics_by_model": {
+    "logistic_regression": {
+      "accuracy": 0.9553705543618018,
+      "balanced_accuracy": 0.9549122044390618,
+      "precision": 0.9603066033365474,
+      "recall": 0.9511101162809592,
+      "f1": 0.9556225298011316,
+      "roc_auc": 0.9878267870442066,
+      "pr_auc": 0.9892268997643526
+    },
+    "rbf_svm": {
+      "accuracy": 0.95934911630031,
+      "balanced_accuracy": 0.9591718299361915,
+      "precision": 0.9694538671340279,
+      "recall": 0.9502012233182503,
+      "f1": 0.9597043035058087,
+      "roc_auc": 0.9906322954945322,
+      "pr_auc": 0.9911659651526689
+    },
+    "random_forest": {
+      "accuracy": 0.9423697510678245,
+      "balanced_accuracy": 0.9416154718901023,
+      "precision": 0.9542811184315212,
+      "recall": 0.931206981075307,
+      "f1": 0.9425053347112737,
+      "roc_auc": 0.9851687683847684,
+      "pr_auc": 0.9854520880654392
+    }
+  },
+  "limitations": [
+    "Putative negatives may contain undiscovered AMPs.",
+    "AMP positives and UniProt-derived negative fragments come from different biological sources; source or composition differences may inflate scores.",
+    "No independent external test set; exploratory only. Do not interpret high CV scores as validated biological performance."
+  ]
+}

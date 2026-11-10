@@ -12,6 +12,13 @@ The ten-sequence candidate/control FASTA panel was submitted to the official onl
 
 These are sequence-only model predictions, not experimental safety measurements or clinical safety decisions. Terminal chemistry is not represented in the submitted one-letter sequences. Scores and endpoint names remain as returned by each server.
 
+On 2026-11-10, the user authorized extending the same two services to the 50
+character-LSTM samples. Both official forms were attempted, but the browser
+interaction stalled and direct requests returned HTTP 400. No prediction table
+was returned or imported. The LSTM samples therefore remain **not
+safety-screened**; attempt details are in
+`extensions/lstm_generation/output/external_prediction_attempts.json`.
+
 ## FtsZ peptide docking
 
 Ten correct candidate/control sequences were submitted to the CABS-dock web server against apo *A. baumannii* FtsZ PDB 22HR, chain A, with the default 50 simulation cycles. All ten job pages now return representative models and clustering details. Job links, exact sequences, and top-cluster summaries are in `results/docking/cabsdock/web_jobs.csv`. CABS-dock does not provide a single binding-affinity score for these jobs; its cluster density, RMSD, and model counts are method-specific structural summaries, not binding free energies or experimental affinities.
